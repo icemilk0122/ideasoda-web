@@ -1,0 +1,453 @@
+{% extends '_layouts/base.nunjucks' %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+{% endblock %}
+
+{% block content %}
+<body class="text-white overflow-x-hidden" style="font-family: Noto Sans TC,PT Sans,Source Sans Pro,Helvetica,Arial,NotoSansCJKTC-Light,NotoSansCJKJP-Light,NotoSansCJKKR-Light,NotoSansHant-Light,NotoSansJP-Light,NotoSansKR-Light,Heiti TC,Microsoft Jhenghei Light,Microsoft Jhenghei,sans-serif">
+
+<!--Nav-->
+{# <nav id="header" class="fixed w-full z-30 top-0 text-white">
+
+	<div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+			
+		<div class="pl-4 flex items-center">
+			<a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"  href="#"> 
+				<!--Icon from: http://www.potlabicons.com/ -->
+				<img class="logo animated bounceInDown delay-2s" src="images/ideasoda-logo@2x.png">
+			</a>
+		</div>
+
+		<div class="block lg:hidden pr-4">
+			<button id="nav-toggle" class="flex items-center p-1 text-orange-800 hover:text-gray-900">
+				<svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+			</button>
+		</div>
+
+		<div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
+			<ul class="list-reset lg:flex justify-end flex-1 items-center">
+				<li class="mr-3">
+					<a class="inline-block py-2 px-4 text-black font-bold no-underline" href="#">Active</a>
+				</li>
+				<li class="mr-3">
+					<a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">link</a>
+				</li>
+				<li class="mr-3">
+					<a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">link</a>
+				</li>
+			</ul>
+			<button id="navAction" class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75">Action</button>
+		</div>
+	</div>
+</nav> #}
+<!--title-->
+<div class="section-1">
+	<div class="container max-w-5xl mx-auto m-8 mb-12">
+		<div class="flex flex-wrap">
+			<div class="w-full lg:w-2/5 p-6 md:p-12 lg:p-0">
+				<img id="logo" class="animated bounceIn delay-1s lg:mt-20" src="images/logo-03.svg">
+				<p class="text-gray-800 text-xl md:text-2xl animated bounceIn delay-1s">創意思達</p>
+				<p class="text-gray-800 font-black text-4xl mt-10 animated fadeIn delay-2s text-center lg:text-left">與孩子一同學習</p>
+				<p class="text-gray-800 font-black text-2xl md:text-3xl animated fadeIn delay-2s text-center lg:text-left">具有美感的程式教育課程</p>
+				<a href="#section-2"><button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded mt-6 animated fadeIn delay-2s block mx-auto lg:mx-0">近期活動</button></a>
+			</div>
+			<div class="w-full lg:w-3/5">
+				<img class="animated bounceIn" src="images/computer.png">
+			</div>
+		</div>
+	</div>
+	<div class="wave"></div>
+</div>
+
+<section id="section-2" class="section-2 bg-white py-8 relative">
+	<div class="absolute cat" data-400-top="left:15%" data-100-top="left:65%;">
+		<img style="transform:rotateY(180deg);" src="images/cat.png">
+	</div>
+	<div class="container max-w-5xl mx-auto m-8">
+		<div class="w-full my-2 text-2xl font-bold leading-tight text-center text-gray-800">近期活動</div>
+		<h1 class="w-full my-2 text-4xl lg:text-5xl font-bold leading-tight text-center text-gray-800">Micro:bit小小彈珠台</h1>
+		<div class="w-full mb-4">	
+			<div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+		</div>
+		<div class="flex flex-wrap">
+			<div class="w-full lg:w-1/2 p-6 relative">
+				<img loading="lazy" class="m-auto absolute top-0 left-0 p-6 lazyload" data-src="images/pinball.gif">
+				<img class="m-auto" src="images/pinball.png">
+			</div>
+			<div class="w-full lg:w-1/2 p-6 md:p-12 lg:p-6">
+				<p class="text-gray-600 mb-8">小小彈珠台的發想來自於夜市的小攤販，每當經過這些攤位的時候，一雙雙的小眼睛總是不停的跟著轉動的彈珠上下移動，相信各位爸媽應該很希望搬一台回家玩個過癮吧？<br><br>從自己組裝彈珠台開始，撰寫計分程式或慶祝動畫，到最後裝飾彈珠台，一面提升創造能力，同時理解程式邏輯，更重要的是和小孩一起度過的美好時光。</p>
+				<p><ul class="text-gray-600"><li>建議年齡：國小 3~6 年級</li><li>開班日期：12/21、12/28</li><li>課程時間：下午 2:00 ~ 5:00</li><li>課程費用：推廣價1200元（包含木作彈珠台材料包、Micro:Bit控制板、電池盒、課程手冊）</li><li>開課地點：台北市和平東路一段183巷9號604教室（和平長老教會)</li><li>開課人數：親子10組</li><li>*因教室不提供電腦，請自行攜帶筆電或平板、手機</li></ul></p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section-3 bg-blue-400 relative">
+	<div class="blueTriangle">
+		<img src="images/blueTriangle.svg">
+	</div>
+	<div class="absolute cow" data-400-top="margin-right:-100px;" data-100-top="margin-right:-30px;">
+		<img src="images/cow.png">
+	</div>
+	<div class="container max-w-5xl mx-auto pt-16 md:my-8 md:pt-24">
+		<div class="absolute water text-center" data-400-top="margin-left:-100px;" data-100-top="margin-left:0;">
+			<h1 class="howitworks text-xl lg:text-3xl font-bold text-gray-800" data-300-top="opacity:0;" data-100-top="opacity:1;">親子共學3步驟&nbsp;&nbsp;&nbsp;</h1>
+		</div>
+		<div class="flex flex-wrap lg:flex-no-wrap lg:-mx-2">
+			<div class="mx-6 mb-6 md:mx-12 lg:mx-6 lg:my-0 w-full rounded overflow-hidden shadow-lg">
+				<img class="w-full" src="images/build.jpg">
+				<div class="px-6 py-4 bg-white h-full">
+					<div class="text-gray-700 font-bold text-xl mb-2">建造</div>
+					<p class="text-gray-600 text-base">
+					Microbit 微型控制板是由英國 BBC 公司為了英國中小學推廣程式教育而研發製造，同時也是我們系列課程中的主軸。在每一次的課程中，我們透過手作將 Microbit 融合在日常生活當中，讓程式教育不再冷冰冰。
+					</p>
+				</div>
+			</div>
+			<div class="mx-6 mb-6 md:mx-12 lg:mx-6 lg:my-0 h-100% w-full rounded overflow-hidden shadow-lg">
+				<img class="w-full" src="images/play.jpg">
+				<div class="px-6 py-4 bg-white h-full">
+					<div class="text-gray-700 font-bold text-xl mb-2">玩樂</div>
+					<p class="text-gray-600 text-base">
+					玩樂是孩童的權利，也是在這個年紀最需要的養分。和小孩一起在玩樂中學習，除了讓印象更加深刻，還可以增進親子之間的感情，一起培養長久的興趣，為童年生活留下美好回憶。
+					</p>
+				</div>
+			</div>
+			<div class="mx-6 mb-6 md:mx-12 lg:mx-6 lg:my-0 w-full rounded overflow-hidden shadow-lg">
+				<img class="w-full" src="images/learn.jpg">
+				<div class="px-6 py-4 bg-white h-full">
+					<div class="text-gray-700 font-bold text-xl mb-2">學習</div>
+					<p class="text-gray-600 text-base">
+					參考108課綱的素養教育，課程中循序漸進的教學方式，不單單照著說明步驟完成作品，更著重思考的過程，利用引導的方式，讓孩童從學習開始，進一步思考，最後能夠能夠表達出屬於自己的美感與邏輯方式。
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="blueYellowTriangle" >
+		<img src="images/blueYellowTriangle.svg">
+	</div>
+</section>
+{# 報名表 #}
+<section class="section-4 bg-white md:pt-8">
+	<div class="container max-w-5xl mx-auto m-8">
+		<h1 class="w-full my-8 text-3xl font-bold leading-tight text-center text-gray-800">報名表</h1>
+		<div class="w-full mx-auto px-6 md:px-12 lg:px-0">
+			<div class="flex flex-wrap -mx-3 mb-6">
+				<div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+					<label class="block uppercase tracking-wide text-gray-700 mb-2" for="grid-first-name">
+						家長姓名
+					</label>
+					<input class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="parent_name" type="text">
+					<p class="text-s hidden">不可以是空白</p>
+				</div>
+				<div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">	
+					<label class="block uppercase tracking-wide text-gray-700 mb-2" for="grid-first-name">
+						家長手機
+					</label>
+					<input class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="parent_num" type="tel" maxlength="10">
+					<p class="text-s hidden">不可以是空白或格式錯誤</p>
+				</div>
+			</div>
+			<div class="flex flex-wrap -mx-3 mb-6">
+				<div class="w-full px-3">
+					<label class="block uppercase tracking-wide text-gray-700 mb-2" for="grid-first-name">
+						家長email
+					</label>
+					<input class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="parent_email" type="email">
+					<p class="text-s hidden">不可以是空白或格式錯誤</p>
+				</div>
+			</div>
+			<div class="flex flex-wrap -mx-3 mb-6">
+				<div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+					<label class="block uppercase tracking-wide text-gray-700 mb-2" for="grid-first-name">
+						小朋友姓名
+					</label>
+					<input class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="kid_name" type="text">
+					<p class="text-s hidden">不可以是空白</p>
+				</div>
+				<div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+					<label class="block uppercase tracking-wide text-gray-700 mb-2" for="grid-first-name">
+						小朋友年齡
+					</label>
+					<input class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="kid_age" type="text" maxlength="2">
+					<p class="text-s hidden">不可以是空白或格式錯誤</p>
+				</div>
+			</div>
+			<div class="flex flex-wrap -mx-3 mb-6">
+				<div class="w-full px-3">
+					<label class="block uppercase tracking-wide text-gray-700 mb-2" for="grid-state">
+						報名場次
+					</label>
+					<div class="relative">
+						<select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="class_id">
+							<option value="20191221">12/21（六) 下午 2:00 ~ 5:00</option>
+							<option value="20191228">12/28（六) 下午 2:00 ~ 5:00</option>
+						</select>
+						<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+							<svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button id="send" class="block mx-auto bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded mt-6">我要報名</button>
+		</div>
+	</div>
+	<div class="wave rotate-y-180"></div>
+</section>
+<section class="section-5 bg-white pb-8">
+	<div class="container max-w-5xl mx-auto m-8">
+		<h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">關於我們</h1>
+		<div class="flex flex-wrap">	
+			<div class="w-full p-6 mt-6">
+				<img class="w-2/3 m-auto" src="images/aboutus.png">
+			</div>
+			<div class="w-full p-6 md:px-12 lg:p-6 mt-6">
+				<div class="text-gray-700 text-m mb-2" >
+					我們是一群來自科技業與教育界的專業人士，在接觸張輝誠老師的學思達教育方式以及葉丙成教授的翻轉教育浪潮之後，有感於目前台灣的教育即使想要翻轉也是苦無人力，因此決定脫離舒適圈，想要為台灣的教育盡一份心力。<br><br>
+					教育理念上，在教育部推行108課綱之後，將其核心著重在素養教育，讓我們更進一步思考，現今的科技日新月異，傳統的教育方式已經無法跟上，唯有教導孩子如何培養學習思考的能力才能接受未來的挑戰。<br><br>
+					在挑選題目上，團隊成員擅長程式教育與美術教育，因此想要將美感與程式邏輯結合，讓左腦與右腦均衡一下，期望下一代在生活上或者工作上除了專業以外，還能更具有一些溫度與美感。<br><br>
+
+					我們的理念：
+					<ul>
+						<li>✦ 親子共學，透過陪伴與學習，讓親情更加溫</li>
+						<li>✦ 結合線上線下課程、傳統手作與新媒體教材，活化課程內容</li>
+						<li>✦ 引導學員學習獨立思考，養成自我學習能力，充分表達自己</li>
+						<li>✦ 推廣偏鄉教育，翻轉城鄉差距</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+<!--Footer-->
+<footer>
+	<div class="container mx-auto px-8">
+        <div class="w-full flex flex-col md:flex-row py-6 items-center">
+			<div class="flex-1">
+				<img class="w-1/3 mx-auto mb-5 md:mx-0 md:mb-0 md:w-1/4 lg:w-26" src="images/logo-02.svg">
+			</div>
+			<div class="flex-1 text-right">
+				<a href="mailto:service@ideasoda.com.tw"><img class="social-icon inline mr-1" src="images/email.svg"></a>
+				<a href="https://www.facebook.com/iDEASoda/" target="_blank"><img class="social-icon inline mr-1" src="images/facebook.svg"></a>
+				<a href="https://lin.ee/1lUuOBR" target="_blank"><img class="social-icon inline" src="images/line.svg"></a>
+			</div>
+        </div>
+    </div>
+</footer>
+{% endblock %}
+{% block scripts %}
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+<script type="text/javascript">
+	var s = skrollr.init([skrollrBody='skrollr-body',mobileDeceleration=0.004]);
+</script>
+<script>
+  if ('loading' in HTMLImageElement.prototype) {
+    const images = document.querySelectorAll('img[loading="lazy"]');
+    images.forEach(img => {
+      img.src = img.dataset.src;
+    });
+  } else {
+    // Dynamically import the LazySizes library
+    const script = document.createElement('script');
+    script.src =
+      'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.1.8/lazysizes.min.js';
+    document.body.appendChild(script);
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7"></script>
+<script>
+var applyScrolling = function (arr, cb) {
+  for (var i = 0; i < arr.length; i++) {
+    cb.call(null, i, arr[i])
+  }
+}
+
+// 注意如果有使用 router 那麼自訂一個 class 可以避免一些問題
+var anchors = document.querySelectorAll("a[href^='#']")
+if (window.scrollTo) {
+  applyScrolling(anchors, function (index, el) {
+    var target = document.getElementById(el.getAttribute('href').substring(1))
+
+    el.addEventListener('click', function (e) {
+      console.log(target)
+      e.preventDefault()
+      // 這邊跟新的 method 參數是不同的。
+      window.scrollTo({'behavior': 'smooth', 'top': target.offsetTop})
+    })
+  })
+}
+</script>
+<script>
+window.onload = function () {
+    document.querySelector('#send').addEventListener('click',send);
+}
+function send() {
+	let allpass = true;
+	let fireBaseData;
+	let parent_name = "",
+		parent_num = "",
+		parent_email = "",
+		kid_name = "",
+		kid_age = "",
+		class_id = ""
+
+	parent_name = document.querySelector("#parent_name").value.trim();
+	parent_num = document.querySelector("#parent_num").value.trim();
+	parent_email = document.querySelector("#parent_email").value.trim();
+	kid_name = document.querySelector("#kid_name").value.trim();
+	kid_age = document.querySelector("#kid_age").value.trim();
+	class_id = document.querySelector("#class_id").value.trim();
+
+	let invalids = document.querySelectorAll('.is-invalid');
+	invalids.forEach(invalid =>invalid.classList.remove('is-invalid'))
+	if (parent_name == "") {
+		document.querySelector("#parent_name").classList.add("is-invalid");
+		allpass = false;
+	}
+
+	if (parent_num == "" || !/^(09)+[0-9]{8}/.test(parent_num)) {
+		document.querySelector("#parent_num").classList.add("is-invalid");
+		allpass = false;
+	}
+
+	if (parent_email == "" || !/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/.test(parent_email)) {
+		document.querySelector("#parent_email").classList.add("is-invalid");
+		allpass = false;
+	}
+
+	if (kid_name == "") {
+		document.querySelector("#kid_name").classList.add("is-invalid");
+		allpass = false;
+	}
+
+	if (kid_age == "" || !/[0-9]/.test(kid_age)) {
+		document.querySelector("#kid_age").classList.add("is-invalid");
+		allpass = false;
+	}
+
+	if (!allpass) {
+		return;
+	}
+
+	fireBaseData = firebase.database().ref("ideasoda-class-pinball");
+	fireBaseData.push({
+		parent_name: parent_name,
+		parent_num: parent_num,
+		parent_email: parent_email,
+		kid_name: kid_name,
+		kid_age: kid_age,
+		class_id: class_id,
+		time: firebase.database.ServerValue.TIMESTAMP
+	},
+	function (error) {
+		if (error) {
+		Swal({
+			text: '發生問題',
+			text: '系統出現問題，請稍後再試',
+			confirmButtonText: '我知道了',
+			confirmButtonClass: 'confirmBtn'
+		});
+		} else {
+		Swal({
+			title: '已成功送出報名申請',
+			text: '我們已收到您的資料，繳款資訊將會寄至您的E-mail。',
+			confirmButtonText: '我知道了',
+			confirmButtonClass: 'confirmBtn'
+		}).then((result) => {
+			location.href = "/";
+		});
+		}
+	});
+}
+</script>
+
+{# <script>
+
+	var scrollpos = window.scrollY;
+	var header = document.getElementById("header");
+	var navcontent = document.getElementById("nav-content");
+	var navaction = document.getElementById("navAction");
+	var brandname = document.getElementById("brandname");
+	var toToggle = document.querySelectorAll(".toggleColour");
+
+	document.addEventListener('scroll', function() {
+
+	/*Apply classes for slide in bar*/
+	scrollpos = window.scrollY;
+
+    if(scrollpos > 10){
+      header.classList.add("bg-gray-800");
+	  navaction.classList.remove("bg-white");
+	  navaction.classList.add("gradient");
+	  navaction.classList.remove("text-gray-800");
+	  navaction.classList.add("text-white");
+	  //Use to switch toggleColour colours
+  	  for (var i = 0; i < toToggle.length; i++) {
+	     toToggle[i].classList.add("text-gray-800");
+		 toToggle[i].classList.remove("text-white");
+	  }
+	  header.classList.add("shadow");
+	  navcontent.classList.remove("bg-gray-100");
+	  navcontent.classList.add("bg-white");
+    }
+    else {
+	  header.classList.remove("bg-gray-800");
+	  navaction.classList.remove("gradient");
+	  navaction.classList.add("bg-white");
+	  navaction.classList.remove("text-white");
+	  navaction.classList.add("text-gray-800");
+	  //Use to switch toggleColour colours
+  	  for (var i = 0; i < toToggle.length; i++) {
+	     toToggle[i].classList.add("text-white");
+		 toToggle[i].classList.remove("text-gray-800");
+	  }
+	  
+	  header.classList.remove("shadow");
+	  navcontent.classList.remove("bg-white");
+	  navcontent.classList.add("bg-gray-100");
+	  
+    }
+
+	});
+
+	
+</script> #}
+
+{# <script>
+	
+	
+	/*Toggle dropdown list*/
+	/*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
+	
+	var navMenuDiv = document.getElementById("nav-content");
+	var navMenu = document.getElementById("nav-toggle");
+	
+	document.onclick = check;
+	function check(e){
+	  var target = (e && e.target) || (event && event.srcElement);
+	  
+	  //Nav Menu
+	  if (!checkParent(target, navMenuDiv)) {
+		// click NOT on the menu
+		if (checkParent(target, navMenu)) {
+		  // click on the link
+		  if (navMenuDiv.classList.contains("hidden")) {
+			navMenuDiv.classList.remove("hidden");
+		  } else {navMenuDiv.classList.add("hidden");}
+		} else {
+		  // click both outside link and outside menu, hide menu
+		  navMenuDiv.classList.add("hidden");
+		}
+	  }
+	  
+	}
+	function checkParent(t, elm) {
+	  while(t.parentNode) {
+		if( t == elm ) {return true;}
+		t = t.parentNode;
+	  }
+	  return false;
+	}
+</script> #}
+{% endblock %}

@@ -1,0 +1,11 @@
+{
+  "generator-yeogurt": {
+    "config": {
+      "projectName": "ideasoda-web",
+      "htmlOption": "nunjucks",
+      "cssOption": "postcss",
+      "testFramework": "mocha"
+    },
+    "version": "3.0.1"
+  }
+}
