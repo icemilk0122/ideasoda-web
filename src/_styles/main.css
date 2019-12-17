@@ -83,8 +83,7 @@ a:focus, button:focus{
 
 .cow{
   width: 200px;
-  bottom:-100px;
-  right: -50px;
+  right: -70px;
 }
 
 .social-icon {
@@ -126,7 +125,6 @@ a:focus, button:focus{
   }
   .cow{
     width: 350px;
-    bottom:-150px;
     right: -150px;
   }
   #logo{

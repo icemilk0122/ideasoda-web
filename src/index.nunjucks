@@ -42,6 +42,9 @@
 	</div>
 </nav> #}
 <!--title-->
+<div class="hidden">
+	<img src="images/loading.gif">
+</div>
 <div class="section-1">
 	<div class="container max-w-5xl mx-auto m-8 mb-12">
 		<div class="flex flex-wrap">
@@ -72,8 +75,8 @@
 		</div>
 		<div class="flex flex-wrap">
 			<div class="w-full lg:w-1/2 p-6 relative">
-				<img loading="lazy" class="m-auto absolute top-0 left-0 p-6 lazyload" data-src="images/pinball.gif">
-				<img class="m-auto" src="images/pinball.png">
+				<img loading="lazy" class="w-full m-auto absolute top-0 left-0 p-6 lazyload" data-src="images/pinball.gif">
+				<img class="w-full m-auto" src="images/pinball.png">
 			</div>
 			<div class="w-full lg:w-1/2 p-6 md:p-12 lg:p-6">
 				<p class="text-gray-600 mb-8">小小彈珠台的發想來自於夜市的小攤販，每當經過這些攤位的時候，一雙雙的小眼睛總是不停的跟著轉動的彈珠上下移動，相信各位爸媽應該很希望搬一台回家玩個過癮吧？<br><br>從自己組裝彈珠台開始，撰寫計分程式或慶祝動畫，到最後裝飾彈珠台，一面提升創造能力，同時理解程式邏輯，更重要的是和小孩一起度過的美好時光。</p>
@@ -85,9 +88,6 @@
 <section class="section-3 bg-blue-400 relative">
 	<div class="blueTriangle">
 		<img src="images/blueTriangle.svg">
-	</div>
-	<div class="absolute cow" data-400-top="margin-right:-100px;" data-100-top="margin-right:-30px;">
-		<img src="images/cow.png">
 	</div>
 	<div class="container max-w-5xl mx-auto pt-16 md:my-8 md:pt-24">
 		<div class="absolute water text-center" data-400-top="margin-left:-100px;" data-100-top="margin-left:0;">
@@ -128,7 +128,10 @@
 	</div>
 </section>
 {# 報名表 #}
-<section class="section-4 bg-white md:pt-8">
+<section class="section-4 bg-white md:pt-8 overflow-x-hidden relative">
+	<div class="absolute cow" data-400-top="margin-right:-100px;" data-100-top="margin-right:-30px;">
+		<img src="images/cow.png">
+	</div>
 	<div class="container max-w-5xl mx-auto m-8">
 		<h1 class="w-full my-8 text-3xl font-bold leading-tight text-center text-gray-800">報名表</h1>
 		<div class="w-full mx-auto px-6 md:px-12 lg:px-0">
@@ -329,7 +332,15 @@ function send() {
 	if (!allpass) {
 		return;
 	}
-
+	Swal({
+		text: '傳送中',
+		allowEscapeKey: false,
+		allowOutsideClick: false,
+		imageUrl: 'images/loading.gif',
+		imageWidth: 100,
+		showConfirmButton: false,
+		width:200
+	})
 	fireBaseData = firebase.database().ref("ideasoda-class-pinball");
 	fireBaseData.push({
 		parent_name: parent_name,
@@ -346,14 +357,18 @@ function send() {
 			text: '發生問題',
 			text: '系統出現問題，請稍後再試',
 			confirmButtonText: '我知道了',
-			confirmButtonClass: 'confirmBtn'
+			confirmButtonClass: 'block mx-auto bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded',
+			buttonsStyling: false,
+			customClass: 'animated tada'
 		});
 		} else {
 		Swal({
 			title: '已成功送出報名申請',
 			text: '我們已收到您的資料，繳款資訊將會寄至您的E-mail。',
 			confirmButtonText: '我知道了',
-			confirmButtonClass: 'confirmBtn'
+			confirmButtonClass: 'block mx-auto bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded',
+			buttonsStyling: false,
+			customClass: 'animated tada'
 		}).then((result) => {
 			location.href = "/";
 		});
