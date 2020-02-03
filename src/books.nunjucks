@@ -1,0 +1,55 @@
+{% extends '_layouts/base.nunjucks' %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+{% endblock %}
+
+{% block content %}
+<body class="text-black overflow-x-hidden" style="font-family: Noto Sans TC,PT Sans,Source Sans Pro,Helvetica,Arial,NotoSansCJKTC-Light,NotoSansCJKJP-Light,NotoSansCJKKR-Light,NotoSansHant-Light,NotoSansJP-Light,NotoSansKR-Light,Heiti TC,Microsoft Jhenghei Light,Microsoft Jhenghei,sans-serif">
+    <div class="container mx-auto py-12">
+        <h1 class="w-full my-2 text-4xl lg:text-5xl font-bold leading-tight text-center text-gray-800">推薦書單</h1>
+        <div class="flex justify-between flex-wrap mx-4 md:mx-0">
+            <div class="max-w-sm rounded overflow-hidden shadow-lg mt-8 h-full">
+                <img class="w-full" src="images/book_1.jpg" alt="Sunset in the mountains">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">程式特攻隊：看漫畫輕鬆學中小學生必備的11個程式基本概念</div>
+                    <p class="text-gray-700 text-base">
+                        本系列書中強調，問題不會只有一種解法，只要能解決問題的都是好方法！閱讀《程式特攻隊》，不只是孩子覺得驚險有趣，連我看了都很想實際操作練習，與程式特攻隊一起達成任務。
+                    </p>
+                </div>
+                <div class="px-6 py-4 text-center">
+                    <a href="https://www.books.com.tw/exep/assp.php/icemilk0122/products/0010829909?utm_source=icemilk0122&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-201912">
+                        <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">按我購買</button>
+                    </a>
+                </div>
+            </div>
+            <div class="max-w-sm rounded overflow-hidden shadow-lg mt-8">
+                <img class="w-full" src="images/book_2.jpg" alt="Sunset in the mountains">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">不插電程式設計遊戲 1</div>
+                    <p class="text-gray-700 text-base">
+                        對老師而言，除了上機練習程式設計外，本書的部分課程更是老師程式設計教學的另類選擇，玩遊戲是孩子的最愛，透過不插電的程式設計遊戲再輔以電腦上機實作，相信對孩子的學習更能事半功倍有效學習。
+                    </p>
+                </div>
+                <div class="px-6 py-4 text-center">
+                    <a href="https://www.books.com.tw/exep/assp.php/icemilk0122/products/0010793679?utm_source=icemilk0122&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-201912">
+                        <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">按我購買</button>
+                    </a>
+                </div>
+            </div>
+            <div class="max-w-sm rounded overflow-hidden shadow-lg mt-8">
+                <img class="w-full" src="images/book_3.jpg" alt="Sunset in the mountains">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">不插電程式設計遊戲 2</div>
+                    <p class="text-gray-700 text-base">這本《不插電程式設計遊戲2》是《不插電程式設計遊戲1》的進階課程，內容更深入探討程式的內涵，包括介紹演算法、流程圖、排序法、二進位等，讓學生了解科技的應用與程式息息相關。</p>
+                </div>
+                <div class="px-6 py-4 text-center">
+                    <a href="https://www.books.com.tw/exep/assp.php/icemilk0122/products/0010804782?utm_source=icemilk0122&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-201912">
+                        <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">按我購買</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock %}
