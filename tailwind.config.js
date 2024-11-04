@@ -74,6 +74,10 @@ module.exports =
     transformStyle: ['responsive'],
     backfaceVisibility: ['responsive'],
     transformBox: ['responsive'],
+    flex: ['responsive'],
+    flexWrap:['responsive'],
+    backgroundColor: ['responsive', 'hover', 'focus', 'active'],
+    textColor: ['responsive', 'hover', 'focus', 'active'],
   },
   plugins: [
     require('tailwindcss-transforms')({

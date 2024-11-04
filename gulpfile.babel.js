@@ -19,8 +19,7 @@ gulp.task('build', gulp.series(
     'copy',
     'imagemin',
     'nunjucks',
-    'postcss',
-    'browserify'
+    'postcss'
   ),
   'rev'
 ));
@@ -32,7 +31,6 @@ gulp.task('serve', gulp.series(
     'copy',
     'nunjucks',
     'postcss',
-    'browserify',
     'browserSync',
     'watch'
   )

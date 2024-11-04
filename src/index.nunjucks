@@ -80,7 +80,7 @@
 			</div>
 			<div class="w-full lg:w-1/2 p-6 md:p-12 lg:p-6">
 				<p class="text-gray-600 mb-8">小小彈珠台的發想來自於夜市的小攤販，每當經過這些攤位的時候，一雙雙的小眼睛總是不停的跟著轉動的彈珠上下移動，相信各位爸媽應該很希望搬一台回家玩個過癮吧？<br><br>從自己組裝彈珠台開始，撰寫計分程式或慶祝動畫，到最後裝飾彈珠台，一面提升創造能力，同時理解程式邏輯，更重要的是和小孩一起度過的美好時光。</p>
-				<p><ul class="text-gray-600"><li>建議年齡：國小 3~6 年級</li><li>開班日期：12/21、12/28</li><li>課程時間：下午 2:00 ~ 5:00</li><li>課程費用：推廣價1200元（包含木作彈珠台材料包、Micro:Bit控制板、電池盒、課程手冊）</li><li>開課地點：台北市和平東路一段183巷9號604教室（和平長老教會)</li><li>開課人數：親子10組</li><li>*因教室不提供電腦，請自行攜帶筆電或平板、手機</li></ul></p>
+				<p><ul class="text-gray-600"><li>建議年齡：國小 3~6 年級</li><li>開班日期：10/31</li><li>課程時間：下午 2:00 ~ 5:00</li><li>課程費用：推廣價1200元（包含木作彈珠台材料包、Micro:Bit控制板、電池盒、課程手冊）</li><li>開課地點：多普林商務中心信義館（台北市大安區信義路四段279號8樓)</li><li>開課人數：親子5組</li><li>*因教室不提供電腦，請自行攜帶筆電或平板、手機</li></ul></p>
 			</div>
 		</div>
 	</div>
@@ -183,8 +183,7 @@
 					</label>
 					<div class="relative">
 						<select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="class_id">
-							<option value="20191221">12/21（六) 下午 2:00 ~ 5:00</option>
-							<option value="20191228">12/28（六) 下午 2:00 ~ 5:00</option>
+							<option value="20191221">10/31（六) 下午 2:00 ~ 5:00</option>
 						</select>
 						<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
 							<svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>

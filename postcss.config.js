@@ -9,9 +9,10 @@ module.exports = function(context) {
 
     // Specify the paths to all of the template files in your project 
     content: [
-      './src/**/*.html',
-      './src/**/*.vue',
-      './src/**/*.jsx',
+      './src/_layouts/*.nunjucks',
+      // './src/**/*.html',
+      // './src/**/*.vue',
+      // './src/**/*.jsx',
       // etc.
     ],
 
@@ -27,7 +28,8 @@ module.exports = function(context) {
       browsers: ['last 2 versions']
     }),
     require('tailwindcss')('./tailwind.config.js'),
-    //purgecss,
+    require('autoprefixer'),
+    purgecss
   ];
 
   return {

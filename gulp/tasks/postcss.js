@@ -11,6 +11,20 @@ import { plugins, args, config, taskTarget, browserSync } from '../utils';
 let dirs = config.directories;
 let entries = config.entries;
 let dest = path.join(taskTarget, dirs.styles.replace(/^_/, ''));
+const purgecss = require('@fullhuman/postcss-purgecss')({
+
+  // Specify the paths to all of the template files in your project 
+  content: [
+    '../../src/_layouts/*.nunjucks',
+    // './src/**/*.html',
+    // './src/**/*.vue',
+    // './src/**/*.jsx',
+    // etc.
+  ],
+
+  // Include any special characters you're using in this regular expression
+  defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
+})
 var postCssPlugins = [
   postCssImport({
     path: [
@@ -19,7 +33,8 @@ var postCssPlugins = [
     ]
   }),
   tailwindcss(),
-  autoprefixer()
+  autoprefixer(),
+  purgecss
 ];
 
 // PostCSS compilation
